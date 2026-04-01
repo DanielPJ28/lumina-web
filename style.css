@@ -214,13 +214,13 @@ li {
 
 /* INFO CONTACTO */
 .info-contacto {
-  max-width: 300px;
+  max-width: 400px;
   text-align: left;
 }
 
 .info-contacto h3 {
   color: #ff7a00;
-}
+} 
 
 .info-contacto p {
   margin: 10px 0;
