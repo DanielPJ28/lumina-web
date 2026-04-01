@@ -14,3 +14,21 @@ mostrarElementos();
 
 // Ejecutar al hacer scroll
 window.addEventListener('scroll', mostrarElementos);
+
+const preguntas = document.querySelectorAll(".faq-question");
+
+  preguntas.forEach(p => {
+    p.addEventListener("click", () => {
+      const item = p.parentElement;
+
+      item.classList.toggle("active");
+
+      const respuesta = item.querySelector(".faq-answer");
+
+      if (item.classList.contains("active")) {
+        respuesta.style.maxHeight = respuesta.scrollHeight + "px";
+      } else {
+        respuesta.style.maxHeight = 0;
+      }
+    });
+  });
