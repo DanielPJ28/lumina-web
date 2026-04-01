@@ -471,19 +471,20 @@ li {
 @media (max-width: 768px) {
 
   .nav-links {
-    position: fixed;
-    top: 0;
-    left: -250px; /* escondido a la izquierda */
-    width: 250px;
-    height: 100vh;
+    position: absolute;
+    top: 60px; /* debajo del navbar */
+    left: -250px;
+    width: 220px;
     background: black;
     flex-direction: column;
-    padding: 80px 20px;
+    padding: 20px;
     transition: 0.3s;
+    border-radius: 0 10px 10px 0;
   }
 
   .nav-links.active {
-    left: 0; /* aparece desde la izquierda */
+    left: 0;
   }
 
 }
+
