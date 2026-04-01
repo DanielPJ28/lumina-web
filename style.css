@@ -424,7 +424,6 @@ li {
   .nav-links {
     position: absolute;
     top: 60px;
-    right: 0;
     background: black;
     width: 200px;
     flex-direction: column;
@@ -467,4 +466,24 @@ li {
   .nav-links.active {
     display: flex;
   }
+}
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -250px; /* escondido a la izquierda */
+    width: 250px;
+    height: 100vh;
+    background: black;
+    flex-direction: column;
+    padding: 80px 20px;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0; /* aparece desde la izquierda */
+  }
+
 }
